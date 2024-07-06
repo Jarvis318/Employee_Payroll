@@ -37,6 +37,8 @@ i=0;
   return employeesArray;
 }
 
+
+
 // Display the average salary
 const displayAverageSalary = function(employeesArray) { //employeesArray not an object here
   let totalSal = 0;
@@ -89,7 +91,7 @@ const displayEmployees = function(employeesArray) {
 
     const salaryCell = document.createElement("td");
     // Format the salary as currency
-    salaryCell.textContent = c.toLocaleString("en-US",{
+    salaryCell.textContent = currentEmployee.salary.toLocaleString("en-US",{
       style:"currency",
       currency:"USD"
     });
