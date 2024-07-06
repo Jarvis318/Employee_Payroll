@@ -27,7 +27,6 @@ i=0;
     {
       return employeesArray[0].salary = 0;
     }
-    console.log(employeesArray[0].salary);
 
   keepGoing = confirm("Would you like to input another employee?")
 }
@@ -39,16 +38,15 @@ i=0;
 }
 
 // Display the average salary
-const displayAverageSalary = function(employeesArray) { 
+const displayAverageSalary = function(employeesArray) { //employeesArray not an object here
   let totalSal = 0;
-  leng = Object.keys(employeesArray).length;
-  console.log(Number(leng[0]));
 
-  for(let i=0; i <Number(leng[0]); i++)
+  for(let i=0; i <employeesArray.length; i++)
   {
     totalSal += employeesArray[i].salary;
   };
- let avgSal = totalSal /Object.keys(employeesArray).length;
+ let avgSal = totalSal /employeesArray.length;
+ parseInt(avgSal);
 
  console.log(avgSal);
 
@@ -58,6 +56,7 @@ const displayAverageSalary = function(employeesArray) {
 // Select a random employee
 const getRandomEmployee = function(employeesArray) {
   // TODO: Select and display a random employee
+  return Math.floor(Math.random() * employeesArray.length);
 }
 
 /*
