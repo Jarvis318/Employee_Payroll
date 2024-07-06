@@ -1,6 +1,6 @@
 An assignment to sort through a code base, to make it perform to the desired parameters. The user is prompted to enter a first and last name of an employee, followed by a salary. The code will then display the amount of users provided, as well as leave a message of the average employee salary and a random winner in the console.
 
-
+Link to the site: https://jarvis318.github.io/Employee_Payroll/
 
 
 
